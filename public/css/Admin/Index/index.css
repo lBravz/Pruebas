@@ -1,0 +1,86 @@
+.btn_crear {
+    background-color: #336699;
+    margin-bottom: 1.25rem;
+    transition: background-color 0.3s; 
+}
+
+.btn_editar,
+.btn_eliminar {
+    background-color: rgb(185, 185, 185);
+    transition: background-color 0.3s; 
+}
+
+.btn_editar:hover {
+    background-color: skyblue;
+}
+
+.btn_eliminar:hover {
+    background-color: rgb(255, 52, 52);
+}
+
+.btn_crear,
+.btn_editar,
+.btn_eliminar {
+    padding: 0.75rem 1.25rem; 
+    border-radius: 0.5rem; 
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem; 
+}
+
+#btn_crear a,
+.btn_editar a {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 1.25rem; 
+}
+
+th, td {
+    padding: 0.9375rem; 
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .btn_crear, .btn_editar, .btn_eliminar {
+        padding: 0.625rem 0.9375rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .div_encabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table {
+        display: block; 
+        overflow-x: auto;
+        white-space: nowrap; 
+    }
+
+    th, td {
+        padding: 0.625rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .btn_crear, .btn_editar, .btn_eliminar {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 0.5rem; 
+    }
+}

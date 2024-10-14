@@ -1,0 +1,131 @@
+.contenedor_proyectos {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.titulo_proyectos {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.seccion_filtros {
+    margin-bottom: 20px;
+}
+
+.no-proyectos {
+    display: none; 
+    color: #333; 
+    font-weight: bold; 
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 60px; 
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    background-color: #f9f9f9; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.seccion_proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion_proyecto {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.seccion_proyecto:hover {
+    transform: scale(1.03);
+}
+
+.propiedad-img img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.estado-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.div_proyecto_info {
+    padding: 15px;
+}
+
+.div_titulo h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.div_descripcion p {
+    margin: 0.5rem 0;
+}
+
+.det_btn button {
+    width: 100%;
+    color: #F5F5F5;
+    background-color: #1E1E1E;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+@media (max-width: 1024px) {
+    .animated-title {
+        font-size: 3.5rem; 
+    }
+
+    .seccion_proyectos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .animated-title {
+        font-size: 3rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .animated-title {
+        font-size: 2.5rem;
+    }
+
+    .seccion_proyecto {
+        width: 100%;
+    }
+}

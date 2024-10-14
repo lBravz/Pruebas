@@ -1,0 +1,233 @@
+.seccion_contactanos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 0; 
+    background: url('/images/Contactanos/fondo1.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+} 
+
+.seccion_contactanos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+    border-radius: 0.625rem; 
+} 
+
+.container_contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 75rem;
+    width: 100%;
+    background-color: transparent;
+    padding: 1.25rem; 
+    border-radius: 0.625rem; 
+    z-index: 2;
+    gap: 1.25rem; 
+    align-items: start;
+}
+
+.animated-title {
+    color: white;
+    margin-top: 1.25rem; 
+}
+
+.div_texto {
+    padding: 1.25rem; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; 
+    color: #ffffff;
+}
+
+.div_texto h2 {
+    font-size: 2.375rem;
+    color: white;
+    margin-bottom: 0.9375rem; 
+}
+
+.div_texto p {
+    color: white;
+    margin-bottom: 1.25rem; 
+    line-height: 1.8; 
+    font-size: 1.25rem; 
+    text-align: center; 
+}
+
+.div_correo a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.25rem; 
+}
+
+.div_correo a:hover {
+    text-decoration: underline; 
+}
+
+.div_correo i {
+    margin-right: 0.625rem; 
+    font-size: 1.25rem; 
+    margin-top: 1rem; 
+}
+
+.div_direccion {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 0.9375rem; 
+    font-size: 1.25rem; 
+    color: white;
+    margin-top: 3.125rem; 
+    text-align: center; 
+}
+
+.div_direccion i {
+    margin-bottom: 0.625rem; 
+    font-size: 1.25rem; 
+}
+
+.div_direccion p {
+    font-size: 1.25rem;
+}
+
+.div_form {
+    background-color: #ffffff; 
+    padding: 2.5rem; 
+    border-radius: 0.625rem; 
+    color: #333;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    border: 0.0625rem solid #ddd; 
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.3125rem; 
+    background-color: #f7f7f7; 
+    font-size: 1rem; 
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007bff;
+    background-color: #fff; 
+    box-shadow: 0 0 0.3125rem rgba(0, 123, 255, 0.5); 
+    outline: none; 
+}
+
+.div_boton input[type="submit"] {
+    padding: 0.75rem 2.1875rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease;
+}
+
+.div_boton input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+.form-group {
+    margin-bottom: 0.9375rem; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3125rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.3125rem;
+    background-color: #f9f9f9; 
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.div_boton {
+    text-align: center; 
+    margin-top: 1.25rem; 
+}
+
+.div_boton input[type="submit"] {
+    padding: 0.625rem 1.875rem; 
+    background-color: #070707;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+}
+
+.div_boton input[type="submit"]:hover {
+    background-color: #5f676f;
+}
+
+.required {
+    color: red;
+}
+
+@media (max-width: 48em) {
+    .container_contacto {
+        grid-template-columns: 1fr; 
+        padding: 0.625rem;
+    }
+    
+    .div_direccion {
+        margin-top: 0.3125rem; 
+    }
+    
+    .div_form {
+        margin-top: 1.25rem;
+        padding: 1.875rem;
+    }
+}
+
+@media (max-width: 30em) {
+    .div_texto p {
+        font-size: 1rem; 
+    }
+
+    .div_correo a, 
+    .div_correo i,
+    .div_direccion i,
+    .div_direccion p {
+        font-size: 0.875rem; 
+    }
+
+    .div_form {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.25rem; 
+    }
+
+    .form-group label {
+        font-size: 0.875rem; 
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        padding: 0.5rem; 
+        font-size: 0.875rem; 
+    }
+
+    .div_boton input[type="submit"] {
+        width: 100%;
+        padding: 0.625rem; 
+        font-size: 1rem; 
+    }
+}

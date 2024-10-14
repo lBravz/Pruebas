@@ -1,0 +1,199 @@
+footer {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 1.25rem; 
+    font-size: 0.875rem; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.seccion_footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem; 
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 1.25rem; 
+}
+
+.div_footer {
+    width: 100%;
+    padding: 0.625rem; 
+}
+
+.footer_logo {
+    display: block;
+    margin: 0 auto 1.25rem;
+    max-width: 9.375rem; 
+}
+
+.footer_info {
+    text-align: center;
+    margin-bottom: 1.25rem; 
+    max-width: 100%;
+    padding: 0 1.25rem; 
+    box-sizing: border-box;
+}
+
+.footer_info h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 0.625rem; 
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.footer_intro,
+.footer_services {
+    font-size: 1rem; 
+    margin-bottom: 1.25rem; 
+}
+
+.footer_services ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 37.5rem;
+}
+
+.footer_services li,
+.div_footer ul li {
+    list-style: none;
+    margin: 0.625rem 0; 
+    font-size: 0.9375rem; 
+}
+
+.div_footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.div_footer a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; 
+}
+
+.div_footer a:hover {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700; 
+}
+
+.info_contactanos {
+    margin: 1.25rem 0; 
+}
+
+.info_contactanos_redes {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem; 
+}
+
+.info_contactanos_redes a {
+    color: white; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.info_contactanos_redes a:hover {
+    transform: scale(1.1);
+}
+
+.info_contactanos_redes .fa-facebook-f:hover {
+    color: #1877F2;
+}
+
+.info_contactanos_redes .fa-x-twitter:hover {
+    color: #1DA1F2;
+}
+
+.info_contactanos_redes .fa-youtube:hover {
+    color: #FF0000;
+}
+
+.info_contactanos_redes .fa-instagram:hover {
+    color: #C13584;
+}
+
+.info_contactanos_redes .fa-linkedin-in:hover {
+    color: #0077B5;
+}
+
+.div_copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.25rem; 
+    border-top: 1px solid #444;
+    padding-top: 0.9375rem; 
+    font-size: 0.75rem; 
+}
+
+.ibcorp_title {
+    font-size: 1.125rem; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.625rem; 
+}
+
+.ibcorp_description {
+    text-align: center;
+    font-size: 0.875rem; 
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 37.5rem; 
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .seccion_footer {
+        grid-template-columns: 1fr; 
+        gap: 0.9375rem; 
+    }
+
+    .div_footer {
+        padding: 0.9375rem 0.625rem; 
+    }
+
+    .info_contactanos_redes {
+        flex-direction: row; 
+        align-items: center;
+        gap: 0.625rem; 
+    }
+
+    .info_contactanos {
+        margin: 0.625rem 0; 
+    }
+
+    .div_footer ul li {
+        margin: 0.5rem 0;
+    }
+
+    .div_copy {
+        font-size: 0.75rem; 
+        margin-top: 0.625rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 0.9375rem;
+        font-size: 0.75rem; 
+    }
+
+    .div_footer ul li {
+        margin: 0.5rem 0; 
+    }
+
+    .info_contactanos_redes {
+        gap: 0.5rem; 
+    }
+
+    .info_contactanos {
+        margin: 0.3125rem 0; 
+    }
+
+    .div_copy {
+        font-size: 0.6875rem; 
+    }
+}

@@ -1,0 +1,142 @@
+.seccion_acceder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6); 
+    background: url('/images/Acceder/background.png') no-repeat center center;
+    background-size: cover; 
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.div_acceder {
+    background-color: white;
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 90px;
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 15px; 
+}
+
+h2, h3 {
+    margin-top: 30px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.form-group input {
+    border: none; 
+    border-bottom: 2px solid #ccc;
+    background: transparent; 
+    padding: 10px 0; 
+    font-size: 1em;
+    width: 100%;
+    outline: none; 
+    transition: border-bottom-color 0.3s ease; 
+}
+
+.form-group input:focus {
+    border-bottom-color: #007bff; 
+}
+
+.div_boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div_boton input {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.div_boton input:hover {
+    background-color: #5f676f;
+}
+
+.div_texto_acceder p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.div_texto_acceder a {
+    color: #111212;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.div_texto_acceder a:hover {
+    color: #e6e9ec;
+    text-decoration: underline;
+}
+
+.div_terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .div_acceder {
+        padding: 50px; 
+        max-width: 40%; 
+        width: 40%; 
+    }
+
+    .form-group input {
+        font-size: 0.9em; 
+    }
+
+    .div_boton input {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .div_acceder {
+        padding: 15px; 
+        max-width: 95%; 
+        width: 95%; 
+    }
+
+    .form-group input {
+        font-size: 0.8em; 
+        height: 30px; 
+        padding: 20px;
+    }
+    
+    .div_boton input {
+        padding: 10px; 
+        font-size: 0.9em; 
+    }
+    
+    .div_texto_acceder p {
+        font-size: 0.8em; 
+    }
+    
+    .div_texto_acceder a {
+        font-size: 0.9em; 
+    }
+}

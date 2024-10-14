@@ -1,0 +1,298 @@
+.encabezado-nosotros {
+    background-image: url(/images/Nosotros/encabezado.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.encabezado-nosotros h1 {
+    font-size: 4rem;
+    margin-left: 6.5%;
+    margin-bottom: 4.5rem;
+    font-weight: 800;
+}
+
+.encabezado-nosotros p {
+    font-size: 1.05rem;
+    width: 40%;
+    text-align: left;
+    margin-left: 6.5%;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+.texto_nosotros,
+.seccion_logros,
+.seccion_objetivos_generales,
+.valores {
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.texto_nosotros h2,
+.seccion_logros h2,
+.seccion_objetivos_generales h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.texto_nosotros p,
+.seccion_logros p,
+.seccion_objetivos_generales p {
+    font-size: 18px;
+}
+
+.div_logros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    width: 60%;
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.seccion_objetivos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+
+.obj-img,
+.obj-text {
+    width: 100%;
+}
+
+.obj-img img {
+    width: 100%;
+}
+
+.obj-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision,
+.vision {
+    display: flex;
+    align-items: center;
+}
+
+.vision {
+    flex-direction: row-reverse;
+}
+
+.valores-img,
+.valores-text {
+    margin: 2rem;
+}
+
+.valores-text h3 {
+    margin-bottom: 1.5rem;
+}
+
+.valores-text p {
+    text-align: justify;
+}
+
+.valores-list {
+    margin-top: 1rem;
+}
+
+.valores-list li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.valores-list img {
+    margin: 0 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .texto_nosotros,
+    .seccion_logros,
+    .seccion_objetivos_generales,
+    .valores {
+        width: 100%;
+    }
+
+    .encabezado-nosotros h1 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .encabezado-nosotros p {
+        font-size: 1rem;
+        width: 50%;
+        line-height: 1.6rem;
+    }
+
+    .div_logros {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .div_logros img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .valores-text p {
+        font-size: 1rem;
+    }
+
+    .seccion_objetivos {
+        grid-template-columns: 1fr;
+    }
+
+    .obj-img img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .obj-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 780px) {
+    .encabezado-nosotros h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .encabezado-nosotros p {
+        font-size: 1rem;
+        width: 70%;
+        line-height: 1.5rem;
+    }
+
+    .mision,
+    .vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .obj-text {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .div_logros {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .valores-text p {
+        font-size: 0.95rem;
+    }
+
+    .seccion_objetivos_generales {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion_objetivos_generales img {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .seccion_objetivos_generales p {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado-nosotros h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .encabezado-nosotros p {
+        font-size: 0.9rem;
+        width: 95%;
+        line-height: 1.3rem;
+        margin-left: 2.5%;
+    }
+
+    .div_logros {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .div_logros img {
+        width: 100%;
+    }
+
+    .div_logros p {
+        font-size: 0.85rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .valores-list li {
+        margin-bottom: 0.5rem;
+    }
+
+    .valores-list img {
+        width: 25px;
+        height: 25px;
+        margin: 0 0.5rem;
+    }
+
+    .valores-img img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .seccion_objetivos_generales {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion_objetivos_generales img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .seccion_objetivos_generales p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+}
